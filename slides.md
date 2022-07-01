@@ -133,6 +133,7 @@ fn get_file(path: Path) -> Result<(), Error> {
     Ok(f) => f.read_to_string(&mut contents).unwrap(),
     Err(err) => panic!("panic!!! {:?}", err),
   }
+  Ok(())
 }
 ```
 ---
