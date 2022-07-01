@@ -175,8 +175,9 @@ fn get_hoge() -> Result<(), Error> {
   // errの場合はここにはもう到達しない
 }
 ```
-Goがよく嫌いって言う人がいうif err != nil { return err }を書かなくていいw
+Goが嫌いって言う人がよく言う `if err != nil { return err }` を書かなくていいw
 ```go
+// こんなやつ
 if err := get_hoge(); err != nil {
   return nil, err;
 }
