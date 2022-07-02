@@ -23,7 +23,7 @@ drawings:
 # css: unocss
 ---
 
-# TauriとRustとSolidJSで作るEthereum Address精製機
+# TauriとRustとSolidJSで作るEthereum Address生成機
 ---
 
 # What is Tauri?
@@ -40,8 +40,15 @@ TauriはRust製のアプリフレームワークです
 ---
 
 # What is Ethereum Address Generator？
-好きなEthereumのアドレスを精製するヤツ
-
+- 好きなEthereumのアドレスを生成するヤツ
+- CPUで計算すると先頭４桁ぐらいのマッチングが限界か
+- GPUで計算すると先頭8桁ぐらいであれば現実的な速度で出る
+  - [詳細はこちら](https://github.com/johguse/profanity)
+- これを利用したハックとか😈
+  - リテラシーが高い人はアドレス先頭４桁と後部４桁でアドレスが正規のものかチェックする
+  - その習性を利用してよくハッキングに使われる
+  - ex) 正しいアドレス: 0x`abcd`1234000ae1c8e8ac27103e4ff65f42a4e`0000`
+  - 悪意のあるアドレス: 0x`abcd`e4a24f56ff4e30172ca8e8c1ea0004321`0000`
 ---
 
 # Demo
